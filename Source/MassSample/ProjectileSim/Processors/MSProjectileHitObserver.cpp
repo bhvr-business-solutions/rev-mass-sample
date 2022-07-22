@@ -65,7 +65,8 @@ void UMSProjectileHitObserver::Execute(UMassEntitySubsystem& EntitySubsystem, FM
 				{
 					auto Hitresult = HitResults[EntityIndex].HitResult;
 					
-					if(Hitresult.GetActor()->Implements<UMassProjectileHitInterface>())
+					if(AActor* hitActor = Hitresult.GetActor())
+					if(hitActor->Implements<UMassProjectileHitInterface>())
 					{
 						IMassProjectileHitInterface::Execute_ProjectileHit(
 							Hitresult.GetActor(),
