@@ -1,3 +1,14 @@
+# Mass + Chaos Engine Tests branch
+
+This is an investigation for the integration of the Chaos Physics Engine with Mass.
+
+The maps showcasing the test are available in the folder `Content\MassSample\Maps\Tests`.
+
+
+
+
+
+
 # Community Mass Sample
 
 #### **Authors:**
